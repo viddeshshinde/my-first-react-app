@@ -44,18 +44,9 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 
-## Project Wireframe
-
-├── node_modules
-├── public
-├── src
-    ├── common
-        ├── components
-    ├── App.jsx
-    ├── index.jsx
-
 ##Demo 1
     
 
 ## Added after Demo 1
- Navbar
+ 1. Responsive Navbar
+ 2. Cards
