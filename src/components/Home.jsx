@@ -4,14 +4,6 @@ import { Button , Jumbotron } from 'react-bootstrap';
 export class Home extends React.Component {
     render() {
 
-        /*<ButtonToolbar>
-            <Button variant="primary" size="lg">
-                Large button
-            </Button>
-            <Button variant="secondary" size="lg">
-                Large button
-            </Button>
-        </ButtonToolbar>*/
         return (
             <div style={{backgrooundColor:"white", margin: 5}}>
                 <br />

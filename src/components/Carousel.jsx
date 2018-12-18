@@ -7,11 +7,7 @@ import { Carousel, Table } from 'react-bootstrap';
 const tableCSS = {
     "backgroundColor":"white",
     "minHeight": "60vh",
-    "maxHeight": "60vh",
-    //"flexDirection": "column",
-    //"align-items": "center",
-    //"justify-content": "center",
-    //"font-size": "calc(10px + 2vmin)",
+    "maxHeight": "60vh"
 }
 
 export class HomeCarousel extends React.Component {
