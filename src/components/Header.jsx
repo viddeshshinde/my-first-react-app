@@ -5,6 +5,7 @@
 import React from 'react';
 import { Logo } from './Logo';
 import { headerStyle } from './HeaderCSS';
+import { MenuBar } from './MenuBar';
 
 export class Header extends React.Component {
 
@@ -14,6 +15,7 @@ export class Header extends React.Component {
             <div style={headerStyle}>
 
                 <Logo />
+                <MenuBar />
 
             </div>
         );
