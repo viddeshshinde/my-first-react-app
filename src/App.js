@@ -3,8 +3,7 @@ import { Home } from './components/Home';
 import { HomeCarousel } from './components/Carousel.jsx';
 import { LoadingButton } from './components/LoadUsersAPI';
 import { ImageCards } from './components/ImageCards';
-
-
+import { ReactCalendar } from './components/Calendar';
 import { Header } from './components/Header';
 
 class App extends Component {
@@ -16,6 +15,7 @@ class App extends Component {
                 <HomeCarousel />
                 <LoadingButton />
                 <ImageCards />
+                <ReactCalendar />
             </div>
         );
     }
