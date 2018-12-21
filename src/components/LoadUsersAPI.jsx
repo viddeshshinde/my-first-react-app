@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button , Jumbotron } from 'react-bootstrap';
 import { MyVerticallyCenteredModal } from './Modal';
+import { Spinner } from './Spinner';
 
 
 export class LoadingButton extends React.Component {
@@ -67,6 +68,9 @@ export class LoadingButton extends React.Component {
                 >
                     {isLoading ? 'Loading…' : 'Click to load'}
                 </Button>
+                <br />
+                <br />
+                { this.state.isLoading && <Spinner />}
             </p>
             <p>
                 <MyVerticallyCenteredModal
