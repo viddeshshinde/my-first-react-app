@@ -7,7 +7,7 @@ import { Carousel, Table } from 'react-bootstrap';
 const tableCSS = {
     "backgroundColor":"white",
     "minHeight": "58.1vh",
-    "maxHeight": "60vh"
+    "maxHeight": "58.1vh"
 }
 
 export class HomeCarousel extends React.Component {
@@ -16,7 +16,8 @@ export class HomeCarousel extends React.Component {
         return (
             <div style={{backgroundColor: "#282c34", margin: 5}}>
 
-                <Carousel>
+                <Carousel
+                    style={{minHeight: "90vh", maxHeight: "90vh"}}>
                     <Carousel.Item>
                         <h1 style={{color:"white"}}>Slide 1</h1>
                         <header className="App-header">

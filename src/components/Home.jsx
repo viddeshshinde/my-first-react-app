@@ -5,10 +5,10 @@ export class Home extends React.Component {
     render() {
 
         return (
-            <div style={{backgrooundColor:"white", margin: 5}}>
+            <div style={{backGroundColor:"white", margin: 5}}>
                 <br />
                 <Jumbotron>
-                    <h1>Hello, there!</h1>
+                    <h1 >Hello, there!</h1>
                     <p>
                         This is a simple hero unit, a simple jumbotron-style
                         component for calling

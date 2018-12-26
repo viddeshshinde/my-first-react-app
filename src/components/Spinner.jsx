@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from 'react-emotion';
-import { ClipLoader } from 'react-spinners';
+import { ClipLoader, BarLoader } from 'react-spinners';
 
 const override = css`
     display: block;
@@ -25,6 +25,15 @@ export class Spinner extends React.Component {
                     color={'#123abc'}
                     loading={this.state.loading}
                 />
+
+                <BarLoader
+                    className={override}
+                    sizeUnit={"px"}
+                    size={50}
+                    color={'#123abc'}
+                    loading={this.state.loading}
+                />
+
             </div>
         )
     }
