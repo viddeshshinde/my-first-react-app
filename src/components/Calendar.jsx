@@ -23,16 +23,21 @@ export class ReactCalendar extends React.Component {
         this.state = {
             selDate: new Date(),
             calBtnText: 'Select a date',
-            showCal: false
+            showCal: true
         }
 
-        this.onChange = this.onChange.bind(this);
+
+        this.onDaySelect = this.onDaySelect.bind(this);
     }
 
 
-    onChange(dt) {
-        this.setState({selDate: dt, showCal: false});
-        this.setState({calBtnText: moment(dt).format('DD-MM-YYYY')});
+
+    onDaySelect(dt) {
+        this.setState({
+            //showCal: false,
+            selDate: dt,
+            calBtnText: moment(dt).format('DD-MM-YYYY')
+        });
     }
 
 
@@ -56,17 +61,21 @@ export class ReactCalendar extends React.Component {
                         <Dropdown.Toggle split
                                          variant="success"
                                          id="dropdown-split-basic"/>
-
+                        {
+                            this.state.showCal &&
                             <Dropdown.Menu
                                 flip="true"
                                 rootCloseEvent="mousedown">
                                 <div id="calenderDiv"
                                      style={divStyle}>
-                                    <Calendar onChange={this.onChange}
-                                              value={this.state.selDate}
+
+                                    <Calendar
+                                        onClickDay={this.onDaySelect}
+                                        value={this.state.selDate}
                                     />
                                 </div>
                             </Dropdown.Menu>
+                        }
 
                     </Dropdown>
                 </h5>
