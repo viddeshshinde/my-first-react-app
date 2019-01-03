@@ -12,7 +12,7 @@ export class VideoPlayer extends Component {
         this.updateInputValue = this.updateInputValue.bind(this);
         this.state = {
             url : "https://www.youtube.com/watch?v=EjHJWmQJaPk",
-            inputValue : "https://www.youtube.com/watch?v=EjHJWmQJaPk"
+            inputValue : ""
         }
 
     }
