@@ -62,7 +62,8 @@ export class VideoPlayer extends Component {
                     width="auto"
                     height="640px"
                     controls="true"
-                    url={this.state.url} playing/>
+                    url={this.state.url}
+                    playing="true"/>
             </div>
         );
     }

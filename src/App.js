@@ -8,6 +8,7 @@ import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
 import { Animate } from './components/Animate';
 import { VideoPlayer } from './components/VideoPlayer';
+import { MyDropzone } from './components/UploadFiles';
 
 
 const mainPageStyle = {
@@ -42,6 +43,7 @@ class App extends Component {
                     <Animate />
                     <ReactCalendar />
                     <VideoPlayer />
+                    <MyDropzone />
                 </div>
             </div>
         )
