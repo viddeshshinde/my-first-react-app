@@ -45,7 +45,8 @@ export class MyVerticallyCenteredModal extends React.Component {
 
         this.state = {
             loadedData: [],
-            tab: []
+            tab: [],
+            numberOfUsers : 0
         }
 
         this.fillTable = this.fillTable.bind(this);
@@ -65,6 +66,7 @@ export class MyVerticallyCenteredModal extends React.Component {
             children.push(<td>{tableData[i].first_name}</td>);
             children.push(<td>{tableData[i].last_name}</td>);
             table.push(<tr>{children}</tr>);
+            this.setState({numberOfUsers : children.length})
         }
 
         this.setState({
@@ -92,7 +94,7 @@ export class MyVerticallyCenteredModal extends React.Component {
 
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter">
-                        Found some Users Data in JSON
+                        User data count: {this.state.numberOfUsers}
                     </Modal.Title>
                 </Modal.Header>
 

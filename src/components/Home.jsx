@@ -5,7 +5,8 @@ export class Home extends React.Component {
     render() {
 
         return (
-            <div style={{backGroundColor:"white", margin: 5}}>
+            <div style={{backGroundColor:"white"}}>
+                <br />
                 <br />
                 <Jumbotron>
                     <h1 >Hello, there!</h1>
@@ -15,7 +16,8 @@ export class Home extends React.Component {
                         extra attention to featured content or information.
                     </p>
                     <p>
-                        <Button href="http://www.google.com/search?q=learn+reactjs" variant="primary">Learn more about ReactJS</Button>
+                        <Button
+                            href="http://www.google.com/search?q=learn+reactjs" variant="primary">Learn more about ReactJS</Button>
                     </p>
                 </Jumbotron>
             </div>

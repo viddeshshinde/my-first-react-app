@@ -7,21 +7,45 @@ import { ReactCalendar } from './components/Calendar';
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
 import { Animate } from './components/Animate';
+import { VideoPlayer } from './components/VideoPlayer';
 
+
+const mainPageStyle = {
+    "float": "right",
+    "marginRight": "2%",
+    "clear": "none",
+    "display": "inline-block",
+    "position": "relative"
+
+}
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <Header />
-                <Home />
-                <Sidebar />
-                <HomeCarousel />
-                <LoadingButton />
-                <ImageCards />
-                <Animate />
-                <ReactCalendar />
+
+            <div className="App"
+                 style={mainPageStyle}>
+
+                <div
+                    style={{ "float":"left"}}
+                >
+                    <Sidebar />
+                </div>
+
+                <div style={{
+                    "float":"right","width":"94%"
+                }}>
+                    <Header />
+                    <Home />
+                    <HomeCarousel />
+                    <LoadingButton />
+                    <ImageCards />
+                    <Animate />
+                    <ReactCalendar />
+                    <VideoPlayer />
+                </div>
             </div>
-        );
+        )
+            ;
     }
 }
 

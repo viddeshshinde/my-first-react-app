@@ -5,7 +5,8 @@ export class Animate extends React.Component {
     render() {
         return (
             <div>
-
+                <br />
+                <br />
                 <ScrollAnimation animateIn='slideInUp'>
                     <h1>
                         I am sliding up ...

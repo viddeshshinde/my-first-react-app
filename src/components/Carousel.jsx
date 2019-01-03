@@ -14,7 +14,7 @@ export class HomeCarousel extends React.Component {
     render() {
 
         return (
-            <div style={{backgroundColor: "#282c34", margin: 5}}>
+            <div style={{backgroundColor: "#282c34"}}>
 
                 <Carousel
                     style={{minHeight: "90vh", maxHeight: "90vh"}}>

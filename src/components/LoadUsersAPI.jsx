@@ -62,36 +62,37 @@ export class LoadingButton extends React.Component {
 
         return (
 
-            <Jumbotron>
+            <div>
                 <br />
-                <h1>Test API - Load Users</h1>
                 <br />
-                <p>
-                    The button will load the users data from URL: <br/>
-                    <b>https://reqres.in/api/users?page=1</b>
-                </p>
-                <br />
-                <p>
-                    <Button
-                        variant="primary"
-                        disabled={isLoading}
-                        onClick={!isLoading ? this.handleClick : null}
-                    >
-                        {isLoading ? 'Loading…' : 'Click to load'}
-                    </Button>
+                <Jumbotron>
+                    <h1>Test API - Load Users</h1>
                     <br />
-                    { this.state.isLoading && <Spinner />}
-                </p>
-                <p>
-                    <MyVerticallyCenteredModal
-                        show={this.state.modalShow}
-                        userData={this.state.userData}
-                        onHide={this.modalClose}
-                    />
-                </p>
-            </Jumbotron>
-
-
+                    <p>
+                        The button will load the users data from URL: <br/>
+                        <b>https://reqres.in/api/users?page=1</b>
+                    </p>
+                    <br />
+                    <p>
+                        <Button
+                            variant="primary"
+                            disabled={isLoading}
+                            onClick={!isLoading ? this.handleClick : null}
+                        >
+                            {isLoading ? 'Loading…' : 'Click to load'}
+                        </Button>
+                        <br />
+                        { this.state.isLoading && <Spinner />}
+                    </p>
+                    <p>
+                        <MyVerticallyCenteredModal
+                            show={this.state.modalShow}
+                            userData={this.state.userData}
+                            onHide={this.modalClose}
+                        />
+                    </p>
+                </Jumbotron>
+            </div>
         );
     }
 }
