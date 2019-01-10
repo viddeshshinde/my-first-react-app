@@ -9,6 +9,7 @@ import { Sidebar } from './components/Sidebar';
 import { Animate } from './components/Animate';
 import { VideoPlayer } from './components/VideoPlayer';
 import { MyDropzone } from './components/UploadFiles';
+import { MyReactButton } from './components/ReactButtons';
 
 
 const mainPageStyle = {
@@ -44,6 +45,7 @@ class App extends Component {
                     <ReactCalendar />
                     <VideoPlayer />
                     <MyDropzone />
+                    <MyReactButton />
                 </div>
             </div>
         )
