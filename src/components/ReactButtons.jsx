@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@trendmicro/react-buttons';
 import '@trendmicro/react-buttons/dist/react-buttons.css';
 
-export class MyReactButton extends React.Component {
+export default class MyReactButton extends React.Component {
 
     render() {
 

@@ -9,7 +9,7 @@ import { Sidebar } from './components/Sidebar';
 import { Animate } from './components/Animate';
 import { VideoPlayer } from './components/VideoPlayer';
 import { MyDropzone } from './components/UploadFiles';
-import { MyReactButton } from './components/ReactButtons';
+import MyReactButton from './components/ReactButtons';
 
 
 const mainPageStyle = {
